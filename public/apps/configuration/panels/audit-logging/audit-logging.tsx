@@ -264,9 +264,9 @@ export function AuditLogging(props: AuditLoggingProps) {
         navigation={props.depsStart.navigation}
         fallBackComponent={
           <EuiPageHeader>
-            <EuiTitle size="l">
-              <h3>Audit logging</h3>
-            </EuiTitle>
+            <EuiText size="s">
+              <h1>Audit logging</h1>
+            </EuiText>
           </EuiPageHeader>
         }
         resourceType={ResourceType.auditLogging}
