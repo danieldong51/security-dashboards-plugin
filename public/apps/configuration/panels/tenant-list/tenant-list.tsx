@@ -167,7 +167,7 @@ export function TenantList(props: TenantListProps) {
         resourceType={ResourceType.tenants}
       />
 
-      <EuiTabs>{renderTabs()}</EuiTabs>
+      <EuiTabs size="s">{renderTabs()}</EuiTabs>
       {!isMultiTenancyEnabled && selectedTabId === 'Manage' && tenancyDisabledWarning}
       {selectedTabContent}
     </>
