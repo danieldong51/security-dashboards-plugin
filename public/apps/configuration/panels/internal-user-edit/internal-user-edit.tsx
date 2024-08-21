@@ -178,9 +178,9 @@ export function InternalUserEdit(props: InternalUserEditDeps) {
             <EuiPageHeader>
               <EuiFlexGroup direction="column" gutterSize="xs">
                 <EuiFlexItem>
-                  <EuiTitle size="l">
+                  <EuiText size="s">
                     <h1>{TITLE_TEXT_DICT[props.action]}</h1>
-                  </EuiTitle>
+                  </EuiText>
                 </EuiFlexItem>
                 <EuiFlexItem>
                   <EuiText size="xs" color="subdued">

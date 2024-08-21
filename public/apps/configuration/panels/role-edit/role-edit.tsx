@@ -262,15 +262,17 @@ export function RoleEdit(props: RoleEditDeps) {
           <>
             {' '}
             <EuiPageHeader>
-              <EuiText size="xs" color="subdued" className="panel-header-subtext">
-                <EuiTitle size="m">
+              <EuiText className="panel-header-subtext">
+                <EuiText size="s">
                   <h1>{TITLE_TEXT_DICT[props.action]}</h1>
-                </EuiTitle>
-                Roles are the core way of controlling access to your cluster. Roles contain any
-                combination of cluster-wide permission, index-specific permissions, document- and
-                field-level security, and tenants. Once you&apos;ve created the role, you can map
-                users to the roles so that users gain those permissions.{' '}
-                <ExternalLink href={DocLinks.UsersAndRolesDoc} />
+                </EuiText>
+                <EuiText size="s" color="subdued">
+                  Roles are the core way of controlling access to your cluster. Roles contain any
+                  combination of cluster-wide permission, index-specific permissions, document- and
+                  field-level security, and tenants. Once you&apos;ve created the role, you can map
+                  users to the roles so that users gain those permissions.{' '}
+                  <ExternalLink href={DocLinks.UsersAndRolesDoc} />
+                </EuiText>
               </EuiText>
             </EuiPageHeader>
           </>

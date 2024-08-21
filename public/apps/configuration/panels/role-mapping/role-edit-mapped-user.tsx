@@ -167,12 +167,15 @@ export function RoleEditMappedUser(props: RoleEditMappedUserProps) {
         coreStart={props.coreStart}
         fallBackComponent={
           <EuiPageHeader>
-            <EuiText size="xs" color="subdued">
-              <EuiTitle size="m">
+            <EuiText color="subdued">
+              <EuiText size="s">
                 <h1>Map user</h1>
-              </EuiTitle>
-              Map users to this role to inherit role permissions. Two types of users are supported:
-              user, and backend role. <ExternalLink href={DocLinks.MapUsersToRolesDoc} />
+              </EuiText>
+              <EuiText size="s">
+                Map users to this role to inherit role permissions. Two types of users are
+                supported: user, and backend role.{' '}
+                <ExternalLink href={DocLinks.MapUsersToRolesDoc} />
+              </EuiText>
             </EuiText>
           </EuiPageHeader>
         }
